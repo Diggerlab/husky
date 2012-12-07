@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* 基本样式     */
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+ font-family: bitfont;
+ src:url(/assets/04B_03B_.TTF);
+}
+@font-face {
+ font-family: numberbitfont;
+ src:url(/assets/04B_03__.TTF);
+}
+img {
+	border:none;
+}
+h1, h2, h3, h4, h5, h6 {
+	display: block;
+	font-weight:normal;
+}
+* {
+	margin:0;
+	padding:0
+}
+ul {
+	list-style:none;
+}
+.font16{
+	font-size:16px
+}
+.font20{
+	font-size:20px
+}
+
+.font24{
+	font-size:24px
+}
+body {
+	line-height:1.25em;
+	color:#333;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:#F4F2EC url(/assets/bg.gif) repeat;
+}
+input[type=text]{
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:0;
+	height:30px;
+	-webkit-appearance:none;
+	font-size:14px;
+}
+input[type=button]{
+	border-radius:0;
+	-webkit-appearance:none;
+	font-size:14px;
+}
+a,a:hover{
+	color:#333;
+	text-decoration:none;
+}
+.floleft {
+	float:left
+}
+.floright {
+	float:right
+}
+.clear{
+	clear: both;
+}
+.hide{
+	display:none;
+}
+#mainbox{
+	background:url(/assets/topbg.png) repeat-x left top;
+	padding-top:120px;
+	.box{
+		width: 1003px;
+		margin: 0 auto;
+		position: relative;
+		.bigegg{
+			background:url(/assets/bigegg.gif) no-repeat;
+			width: 280px;
+			height: 340px;
+			margin: 0px auto;
+		}
+		.gulu{
+			width: 150px;
+			height: 120px;
+			position: absolute;
+			top: -40px;
+			right: 280px;
+			background: url(/assets/gulu.gif) no-repeat;
+			&.gulu-en{
+				background: url(/assets/gulu-en.gif) no-repeat;
+			}
+			&.gulu-ch{
+				background: url(/assets/gulu-ch.gif) no-repeat;
+			}
+		}
+		.notice{
+			width: 618px;
+			height: 109px;
+			background: url(/assets/notice.png) no-repeat;
+			margin: 0 auto;
+			&.notice-en{
+				background: url(/assets/notice-en.png) no-repeat;
+			}
+			&.notice-ch{
+				background: url(/assets/notice-ch.png) no-repeat;
+			}
+		}
+		.entermail{
+			width: 395px;
+			height: 55px;
+			margin: 10px auto;
+			input[type=text]{
+				width: 300px;
+				height: 34px;
+				line-height: 32px;
+				padding:5px 10px;
+				background: url(/assets/inputbg.png) no-repeat;
+				color: #ccc;
+				font-size:24px;
+				font-family: numberbitfont;
+				border: none;
+				float: left;
+				margin-top: 1px;
+			}
+			.gobtn{
+				width: 69px;
+				height: 49px;
+				background: url(/assets/gobtn.png) no-repeat 0px 0px;
+				float: right;
+				border: none;
+				padding: 0;
+				cursor: pointer;
+				&:hover{
+					background: url(/assets/gobtn.png) no-repeat 0px -56px;
+				}
+			}
+		}
+	}
+}
+#language{
+	text-align: center;
+	font-family: "Arial";
+	font-size: 12px;
+	margin: 40px auto 20px;
+	a{
+		padding: 0 20px;
+		background: url(/assets/line.png) no-repeat right center;
+		color: #999;
+		&.sel{
+			color: #000;
+		}
+	}
+}
+
