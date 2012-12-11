@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Husky</title>
+  <title>GULU</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%- flash.each do |name, msg| -%>
+  <% if msg.is_a?(String) %>
+    <%= content_tag :div, :class => "message #{name}" do -%>
+      <%= msg.html_safe %>
+    <% end %> 
+  <% end %>
+<%- end -%>
 <%= yield %>
 
 </body>

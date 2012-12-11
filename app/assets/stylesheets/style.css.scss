@@ -8,11 +8,11 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 
 @font-face {
  font-family: bitfont;
- src:url(/assets/04B_03B_.TTF);
+ src:image-url("04B_03B_.TTF");
 }
 @font-face {
  font-family: numberbitfont;
- src:url(/assets/04B_03__.TTF);
+ src:image-url("04B_03__.TTF");
 }
 img {
 	border:none;
@@ -43,7 +43,7 @@ body {
 	color:#333;
 	font-size:12px;
 	font-family:Arial, Helvetica, sans-serif;
-	background:#F4F2EC url(/assets/bg.gif) repeat;
+	background:#F4F2EC image-url("bg.gif") repeat;
 }
 input[type=text]{
 	background-color:#fff;
@@ -75,14 +75,14 @@ a,a:hover{
 	display:none;
 }
 #mainbox{
-	background:url(/assets/topbg.png) repeat-x left top;
+	background:image-url("topbg.png") repeat-x left top;
 	padding-top:120px;
 	.box{
 		width: 1003px;
 		margin: 0 auto;
 		position: relative;
 		.bigegg{
-			background:url(/assets/bigegg.gif) no-repeat;
+			background:image-url("bigegg.gif") no-repeat;
 			width: 280px;
 			height: 340px;
 			margin: 0px auto;
@@ -93,24 +93,24 @@ a,a:hover{
 			position: absolute;
 			top: -40px;
 			right: 280px;
-			background: url(/assets/gulu.gif) no-repeat;
+			background: image-url("gulu.gif") no-repeat;
 			&.gulu-en{
-				background: url(/assets/gulu-en.gif) no-repeat;
+				background: image-url("gulu-en.gif") no-repeat;
 			}
 			&.gulu-ch{
-				background: url(/assets/gulu-ch.gif) no-repeat;
+				background: image-url("gulu-ch.gif") no-repeat;
 			}
 		}
 		.notice{
 			width: 618px;
 			height: 109px;
-			background: url(/assets/notice.png) no-repeat;
+			background: image-url("notice.png") no-repeat;
 			margin: 0 auto;
 			&.notice-en{
-				background: url(/assets/notice-en.png) no-repeat;
+				background: image-url("notice-en.png") no-repeat;
 			}
 			&.notice-ch{
-				background: url(/assets/notice-ch.png) no-repeat;
+				background: image-url("notice-ch.png") no-repeat;
 			}
 		}
 		.entermail{
@@ -122,7 +122,7 @@ a,a:hover{
 				height: 34px;
 				line-height: 32px;
 				padding:5px 10px;
-				background: url(/assets/inputbg.png) no-repeat;
+				background: image-url("inputbg.png") no-repeat;
 				color: #ccc;
 				font-size:24px;
 				font-family: numberbitfont;
@@ -133,13 +133,13 @@ a,a:hover{
 			.gobtn{
 				width: 69px;
 				height: 49px;
-				background: url(/assets/gobtn.png) no-repeat 0px 0px;
+				background: image-url("gobtn.png") no-repeat 0px 0px;
 				float: right;
 				border: none;
 				padding: 0;
 				cursor: pointer;
 				&:hover{
-					background: url(/assets/gobtn.png) no-repeat 0px -56px;
+					background: image-url("gobtn.png") no-repeat 0px -56px;
 				}
 			}
 		}
@@ -152,11 +152,35 @@ a,a:hover{
 	margin: 40px auto 20px;
 	a{
 		padding: 0 20px;
-		background: url(/assets/line.png) no-repeat right center;
+		background: image-url("line.png") no-repeat right center;
 		color: #999;
 		&.sel{
 			color: #000;
 		}
 	}
+}
+
+.message {
+	margin-top: 20px;
+	margin: 0px auto;
+	width: 500px;
+	padding: 5px 10px;
+	text-align: center;
+	border: 1px solid #333;
+	background: #fff;
+}
+
+.alert {
+	color: #cc0000;
+	line-height: 30px;
+	font-size:16px;
+	font-weight: bold;
+}
+
+.notice {
+	color: #009900;
+	line-height: 30px;
+	font-size:16px;
+	font-weight: bold;
 }
 
