@@ -44,6 +44,7 @@ body {
 	font-size:12px;
 	font-family:Arial, Helvetica, sans-serif;
 	background:#F4F2EC image-url("bg.gif") repeat;
+	overflow: hidden;
 }
 input[type=text]{
 	background-color:#fff;
@@ -75,91 +76,114 @@ a,a:hover{
 	display:none;
 }
 #mainbox{
-	background:image-url("topbg.png") repeat-x left top;
-	padding-top:120px;
+	padding-top:90px;
 	.box{
 		width: 1003px;
 		margin: 0 auto;
 		position: relative;
-		.bigegg{
-			background:image-url("bigegg.gif") no-repeat;
-			width: 280px;
-			height: 340px;
-			margin: 0px auto;
-		}
-		.gulu{
-			width: 150px;
-			height: 120px;
-			position: absolute;
-			top: -40px;
-			right: 280px;
-			background: image-url("gulu.gif") no-repeat;
-			&.gulu-en{
-				background: image-url("gulu-en.gif") no-repeat;
-			}
-			&.gulu-ch{
-				background: image-url("gulu-ch.gif") no-repeat;
-			}
-		}
-		.notice{
-			width: 618px;
-			height: 109px;
-			background: image-url("notice.png") no-repeat;
-			margin: 0 auto;
-			&.notice-en{
-				background: image-url("notice-en.png") no-repeat;
-			}
-			&.notice-ch{
-				background: image-url("notice-ch.png") no-repeat;
-			}
-		}
-		.entermail{
-			width: 395px;
-			height: 55px;
-			margin: 10px auto;
-			input[type=text]{
-				width: 300px;
-				height: 34px;
-				line-height: 32px;
-				padding:5px 10px;
-				background: image-url("inputbg.png") no-repeat;
-				color: #ccc;
-				font-size:24px;
-				font-family: numberbitfont;
-				border: none;
-				float: left;
-				margin-top: 1px;
-			}
-			.gobtn{
-				width: 69px;
-				height: 49px;
-				background: image-url("gobtn.png") no-repeat 0px 0px;
-				float: right;
-				border: none;
-				padding: 0;
-				cursor: pointer;
-				&:hover{
-					background: image-url("gobtn.png") no-repeat 0px -56px;
-				}
-			}
+				
+	}
+}
+
+.gulu{
+	width: 150px;
+	height: 120px;
+	position: absolute;
+	top: -70px;
+	right:130px;
+	background: image-url("gulu.gif") no-repeat;
+	&.gulu-en{
+		background: image-url("gulu-en.gif") no-repeat;
+	}
+	&.gulu-ch{
+		background: image-url("gulu-ch.gif") no-repeat;
+	}
+}
+.notice{
+	width: 618px;
+	height: 109px;
+	background: image-url("notice.png") no-repeat;
+	margin: 0 auto;
+	&.notice-en{
+		background: image-url("notice-en.png") no-repeat;
+	}
+	&.notice-ch{
+		background: image-url("notice-ch.png") no-repeat;
+	}
+}
+.tishi{
+	font-family: "numberbitfont",Arial;
+	font-size: 14px;
+	color: #666;
+	line-height: 28px;
+	-webkit-text-shadow:2px 2px 0px #fff;
+	-moz-text-shadow:2px 2px 0px #fff;
+	-o-text-shadow:2px 2px 0px #fff;
+	text-shadow:2px 2px 0px #fff;
+	padding-left: 2px;
+}
+.entermail{
+	width:437px;
+	height: 55px;
+	margin: 10px auto;
+	input[type=text]{
+		width: 340px;
+		height: 34px;
+		line-height: 32px;
+		padding:5px 10px;
+		background:rgba(0,0,0,.5);
+		box-shadow:inset 1px 1px 0 rgba(0,0,0,.2);
+		border-radius:3px;
+		color: #ccc;
+		font-size:24px;
+		font-family: numberbitfont;
+		border: none;
+		float: left;
+		margin-top: 1px;
+	}
+	.gobtn{
+		width: 69px;
+		height: 49px;
+		background: image-url("gobtn.png") no-repeat 0px 0px;
+		float: right;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		&:hover{
+			background: image-url("gobtn.png") no-repeat 0px -56px;
 		}
 	}
 }
 #language{
-	text-align: center;
+	text-align: right;
 	font-family: "Arial";
 	font-size: 12px;
-	margin: 40px auto 20px;
+	position: absolute;
+	right:18px;
+	bottom: 38px;
+	-webkit-text-shadow:2px 2px 0px #fff;
+	-moz-text-shadow:2px 2px 0px #fff;
+	-o-text-shadow:2px 2px 0px #fff;
+	text-shadow:2px 2px 0px #fff;
 	a{
 		padding: 0 20px;
 		background: image-url("line.png") no-repeat right center;
-		color: #999;
+		color: #666;
+		&:hover{
+			color: #333;
+		}
 		&.sel{
 			color: #000;
 		}
 	}
 }
-
+.enterbox{
+	position: absolute;
+	width: 437px;
+	margin: 0px 0 0 -215px;
+	left: 50%;
+	top:60px;
+}
 .message {
 	margin-top: 20px;
 	margin: 0px auto;
@@ -183,4 +207,110 @@ a,a:hover{
 	font-size:16px;
 	font-weight: bold;
 }
+
+
+.coming{
+	width: 437px;
+	height: 41px;
+	background: image-url("coming.png");
+	margin:35px auto;
+}
+.year{
+	width: 924px;
+	height: 133px;
+	background: image-url("year.png") no-repeat;
+	position: absolute;
+	top: 560px;
+	left: 50%;
+	margin: 0 0 0 -462px;
+
+}
+
+.runegg{
+	width:208px;
+	height:250px;
+	position: fixed;
+	z-index: 99999;
+	bottom: 108px;
+	left:50%;
+	margin: 0 0 0 -104px;
+	background:image-url("paopao.png") no-repeat;
+	background:image-url("pp.gif")\9;
+	-webkit-animation:'runegg' 0.5s steps(3) infinite;
+	-moz-animation:'runegg' 0.5s steps(3) infinite;
+	-o-animation:'runegg' 0.5s steps(3) infinite;
+	animation:'runegg' 0.5s steps(3) infinite;
+}
+@-webkit-keyframes runegg {
+	0% {
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -624px 0; 
+	}
+}
+@-moz-keyframes runegg {
+	0% {
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -624px 0; 
+	}
+}
+@-o-keyframes runegg {
+	0% {
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -624px 0; 
+	}
+}
+@keyframes runegg {
+	0% {
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -624px 0; 
+	}
+}
+
+.road{
+	width: 100%;
+	height:113px;
+	background: image-url("road.gif") repeat-x left top;
+	position: fixed;
+	bottom: 0; 
+	left: 0
+ }
+
+
+#demo {
+	overflow:hidden;
+	width: 100%;
+	position: fixed;
+	bottom: 108px;
+}
+#demo img {
+	margin: 0 120px;
+	vertical-align: bottom;
+}
+#indemo {
+	float: left;
+	width: 800%;
+}
+#demo1 {
+	float: left;
+}
+#demo2 {
+	float: left;	
+}
+
+.cloud{
+	width:1300px; height:126%; margin:0 auto; position:relative
+}
+
+
+#cloud1,#cloud2 { position:absolute}
+#cloud1 { width:285px; height:126px; background:image-url("yun.png"); left:10px; top:140px}
+#cloud2 { width:131px; height:90px; background:image-url("yun1.png"); left:1000px; top:150px}
 
