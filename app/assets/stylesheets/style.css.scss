@@ -187,19 +187,7 @@ a,a:hover{
 	}
 }
 
-.message {
-	margin-top: 20px;
-	margin: 0px auto;
-	width: 500px;
-	padding: 5px 10px;
-	text-align: center;
-	border: 1px solid #333;
-	background: #fff;
-}
-
-
-
-.notice,.alert{
+@mixin message {
 	border: none;
 	background-color: none;
 	padding: 0;
@@ -211,22 +199,32 @@ a,a:hover{
 	margin: 0 0 0 50px;
 	z-index: 999999;
 	background-image: image-url("ts.png");
-	&.y-en{
+}
+
+
+
+.notice,.alert{
+	@include message;
+	&.en{
 		background-position: -402px -96px;
 	}
-	&.y-jp{
+	&.ja{
 		background-position: -402px 0px;
 	}
-	&.y-ch{
+	&.zh{
 		background-position: -402px -192px;
 	}
-	&.n-en{
+}
+
+.alert {
+	@include message;
+	&.en{
 		background-position: 0 -96px;
 	}
-	&.n-jp{
+	&.ja{
 		background-position: 0 0px;
 	}
-	&.n-ch{
+	&.zh{
 		background-position: 0 -192px;
 	}
 }
