@@ -142,7 +142,7 @@ a,a:hover{
 		background:rgba(0,0,0,.5);
 		_background:#666;
 		*background:#666;
-		background:#666\9;
+		background:#666\0;
 		box-shadow:inset 1px 1px 0 rgba(0,0,0,.2);
 		border-radius:3px;
 		color: #ccc;
@@ -255,9 +255,9 @@ a,a:hover{
 	left:50%;
 	margin: 0 0 0 -104px;
 	background:image-url("paopao.png") no-repeat;
+	background:image-url("pp.gif")\0;
 	*background:image-url("pp.gif");
 	_background:image-url("pp.gif");
-	background:image-url("pp.gif")\9;
 	-webkit-animation:'runegg' 0.5s steps(3) infinite;
 	-moz-animation:'runegg' 0.5s steps(3) infinite;
 	-o-animation:'runegg' 0.5s steps(3) infinite;
