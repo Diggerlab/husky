@@ -6,7 +6,7 @@ Husky::Application.routes.draw do
   resources :applies
   resources :welcome do 
   	collection do 
-      get :en, :to => "welcome#index"
+      get :en, :to => "welcome#en"
 			get :zh, :to => "welcome#zh"
 			get :ja, :to => "welcome#ja"
 		end
