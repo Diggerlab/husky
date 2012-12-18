@@ -6,7 +6,6 @@ class AppliesController < ApplicationController
     else
       redirect_to :back, alert: 'Please input your email address.' 
     end
-
   end
 
 end

@@ -190,8 +190,10 @@ a,a:hover{
 
 
 
-.notice,.alert{
-	border:none;
+
+@mixin message {
+	border: none;
+	background-color: none;
 	padding: 0;
 	width: 402px;
 	height: 96px;
@@ -201,22 +203,32 @@ a,a:hover{
 	margin: 0 0 0 50px;
 	z-index: 999999;
 	background-image: image-url("ts.png");
-	&.y-en{
+}
+
+
+
+.notice{
+	@include message;
+	&.en{
 		background-position: -402px -96px;
 	}
-	&.y-jp{
+	&.ja{
 		background-position: -402px 0px;
 	}
-	&.y-ch{
+	&.zh{
 		background-position: -402px -192px;
 	}
-	&.n-en{
+}
+
+.alert {
+	@include message;
+	&.en{
 		background-position: 0 -96px;
 	}
-	&.n-jp{
+	&.ja{
 		background-position: 0 0px;
 	}
-	&.n-ch{
+	&.zh{
 		background-position: 0 -192px;
 	}
 }
@@ -231,7 +243,6 @@ a,a:hover{
 	top: 560px;
 	left: 50%;
 	margin: 0 0 0 -462px;
-
 }
 
 .runegg{
@@ -243,12 +254,15 @@ a,a:hover{
 	left:50%;
 	margin: 0 0 0 -104px;
 	background:image-url("paopao.png") no-repeat;
-	background:image-url("pp.gif")\9;
+	*background:image-url("pp.gif");
 	-webkit-animation:'runegg' 0.5s steps(3) infinite;
 	-moz-animation:'runegg' 0.5s steps(3) infinite;
 	-o-animation:'runegg' 0.5s steps(3) infinite;
 	animation:'runegg' 0.5s steps(3) infinite;
 }
+
+
+
 @-webkit-keyframes runegg {
 	0% {
 		background-position: 0px 0; 
@@ -336,7 +350,4 @@ a,a:hover{
 	left: 0;
 	top: 0;
 	z-index: 998;
-}
-.yts{
-
 }
