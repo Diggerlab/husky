@@ -22,10 +22,13 @@
 <%- end -%>
 <%= yield %>
 <div id="language">
-  <div class="fb-like" data-href="http://getgulu.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
-  <a href="/welcome/en" <%= "class='sel'".html_safe if action_name == 'en' %>>English</a>
-  <a href="/welcome/zh" <%= "class='sel'".html_safe if action_name == 'zh' %>>简体中文</a>
-  <a href="/welcome/ja" <%= "class='sel'".html_safe if action_name == 'ja' %> style="background:none">日 本 語</a>
+  <div class="fb-like floleft" data-href="http://getgulu.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true" style="margin-top:-2px"></div>
+  <span class="floleft">
+    <a href="/welcome/en" <%= "class='sel'".html_safe if action_name == 'en' %>>English</a>
+    <a href="/welcome/zh" <%= "class='sel'".html_safe if action_name == 'zh' %>>简体中文</a>
+    <a href="/welcome/ja" <%= "class='sel'".html_safe if action_name == 'ja' %> style="background:none">日 本 語</a>
+  </span>
+  
 </div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
