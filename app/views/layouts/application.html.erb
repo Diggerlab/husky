@@ -21,6 +21,19 @@
   <% end %>
 <%- end -%>
 <%= yield %>
-
+<div id="language">
+  <div class="fb-like" data-href="http://getgulu.com" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+  <a href="/welcome/en">English</a>
+  <a href="/welcome/zh">简体中文</a>
+  <a href="/welcome/ja" style="background:none">日 本 語</a>
+</div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_CN/all.js#xfbml=1&appId=405333056212886";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
