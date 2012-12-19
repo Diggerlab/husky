@@ -254,15 +254,18 @@ a,a:hover{
 	bottom: 108px;
 	left:50%;
 	margin: 0 0 0 -104px;
-	background:image-url("paopao.png") no-repeat;
-	background:image-url("pp.gif")\0;
-	*background:image-url("pp.gif");
-	_background:image-url("pp.gif");
-	-webkit-animation:'runegg' 0.5s steps(3) infinite;
-	-moz-animation:'runegg' 0.5s steps(3) infinite;
-	-o-animation:'runegg' 0.5s steps(3) infinite;
+	background:image-url("pp.gif");
 	animation:'runegg' 0.5s steps(3) infinite;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   .runegg {
+   		background:image-url("paopao.png") no-repeat;
+   		-webkit-animation:'runegg' 0.5s steps(3) infinite;
+   	} /*chrome & safari*/
+}
+
+
 
 
 
