@@ -166,34 +166,47 @@ a,a:hover{
 	}
 }
 
-#language{
-	text-align: right;
-	font-family: "Arial";
-	font-size: 12px;
+#foot{
+	width: 100%;
 	position: absolute;
-	right:18px;
 	bottom: 38px;
-	-webkit-text-shadow:2px 2px 0px #fff;
-	-moz-text-shadow:2px 2px 0px #fff;
-	-o-text-shadow:2px 2px 0px #fff;
-	text-shadow:2px 2px 0px #fff;
-	a{
-		padding: 2px 20px 0 20px;
-		background: image-url("line.png") no-repeat right center;
-		color: #666;
-		&:hover{
-			color: #333;
-		}
-		&.sel{
-			color: #000;
+
+	.links {
+		float:left;
+		position: absolute;
+		left:18px;
+		.ml10 {
+			margin-left: 10px;
 		}
 	}
 
-	.fb {
-		overflow: hidden;
+	#language{
+		float:right;
+		font-family: "Arial";
+		font-size: 12px;
+		position: absolute;
+		right:18px;
+		-webkit-text-shadow:2px 2px 0px #fff;
+		-moz-text-shadow:2px 2px 0px #fff;
+		-o-text-shadow:2px 2px 0px #fff;
+		text-shadow:2px 2px 0px #fff;
+		a{
+			padding: 2px 20px 0 20px;
+			background: image-url("line.png") no-repeat right center;
+			color: #666;
+			&:hover{
+				color: #333;
+			}
+			&.sel{
+				color: #000;
+			}
+		}
+
+		.fb {
+			overflow: hidden;
+		}
 	}
 }
-
 
 
 @mixin message {

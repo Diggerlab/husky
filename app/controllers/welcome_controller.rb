@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+	layout 'welcome'
 	before_filter :set_locale, :only => [:zh, :ja, :en]
 	def index
 	  I18n.locale = extract_locale_from_accept_language_header
