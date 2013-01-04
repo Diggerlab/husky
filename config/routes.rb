@@ -11,5 +11,6 @@ Husky::Application.routes.draw do
 			get :ja, :to => "welcome#ja"
 		end
   end
+  match ':action'  => 'static#:action'
   root to: 'welcome#index'
 end
