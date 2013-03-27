@@ -8,7 +8,7 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 
 @font-face {
  font-family: bitfont;
- src:image-url("04B_03B_.TTF");
+ src:image-url("TinyPixy.ttf");
 }
 @font-face {
  font-family: numberbitfont;
@@ -372,4 +372,269 @@ a,a:hover{
 	left: 0;
 	top: 0;
 	z-index: 998;
+}
+
+
+/******download page**********/
+.download_content{
+	width: 980px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.chichi_logo{
+	width: 361px;
+	height: 300px;
+	background: image-url("chichi-logo.png") no-repeat left bottom;
+	animation:chichi_logo 0.7s 1 ease both;
+	position: absolute;
+	top:0px;
+	right:100px;
+}
+
+@keyframes chichi_logo {
+	0%{
+		height: 0
+	}
+	
+	70%{
+		height: 260px;
+	}
+	90% {
+		height: 220px;
+	}
+	100% {
+		height: 260px;
+	}
+}
+.facebook_logo{
+	width: 59px;
+	height: 311px;
+	background: image-url("download-bg.png") no-repeat;
+	background-position: -1015px -30px;
+	animation:facebook_logo 1.5s 1 ease both;
+	position: absolute;
+	top:0px;
+	right:10px;
+}
+
+@keyframes facebook_logo {
+	0%, 49.99%{
+		background-position: -1015px -311px;
+	}
+	
+	90%{
+		background-position:-1015px -70px;
+	}
+	95% {
+		background-position: -1015px -90px;
+	}
+	100% {
+		background-position: -1015px -70px;
+	}
+}
+
+
+
+
+.downloadapp{
+	width: 980px;
+	height: 170px;
+	position: absolute;
+	bottom: 113px;
+	left: 50%;
+	margin-left:-530px;
+	
+
+}
+
+
+.chichi_app{
+	width:1100px;
+	height:420px;
+	position: absolute;
+	margin: 0 0 0 -550px;
+	bottom: 113px;
+	left: 50%;
+	.pet_1{
+		width:97px;
+		height:112px;
+		background: image-url("download-bg.png") no-repeat -632px -352px;
+		float:left;
+		margin-top: 309px;
+		&:hover{
+			background: image-url("download-bg.png") no-repeat -526px -352px;
+			margin-top: 308px;
+		}
+	}
+
+	.image_app{
+		background: image-url("download-bg.png") no-repeat 1px -14px;
+		width: 502px;
+		height: 420px;
+		float: left;
+		margin-left: -12px;
+		position: relative;
+		.pet_2{
+			width:84px;
+			height:79px;
+			background: image-url("download-bg.png") no-repeat -632px -257px;
+			position: absolute;
+			top: 150px;
+			left: 160px;
+			&:hover{
+				background: image-url("download-bg.png") no-repeat -521px -257px;
+			}
+		}
+	}
+	.download_btn{
+		width: 408px;
+		height: 110px;
+		float: left;
+		position: relative;
+		margin: 250px 0 0 25px;
+		a{
+			width: 408px;
+			height: 110px;
+			position: absolute;
+			background: image-url("download-bg.png") no-repeat -509px -128px;
+			left: 0;
+			bottom: 0;
+			&:hover{
+				background: image-url("download-bg.png") no-repeat -510px -17px;
+			}
+		}
+		.tree{
+			width: 138px;
+			height: 143px;
+			background: image-url("download-bg.png") no-repeat -772px -281px;
+			position: absolute;
+			left: 355px;
+			top:30px;
+		}
+	}
+	
+	
+}
+.chichi_slip_right{
+	width:125px;
+	height:131px;
+	background:image-url("slip-right.png") no-repeat -3000px 0;
+   	animation:slip_right 4s 1;
+   	background-size: 1000px 131px;
+   	position: absolute;
+   	top: -122px;
+   	left:-19px;
+}
+@keyframes slip_right {
+	0%, 24.99%{
+		background-position: 0px 0; 
+	}
+	25%, 29.99% {
+		background-position: -125px 0; 
+	}
+	30%, 42.49% {
+		background-position: -250px 0; 
+	}
+	42.5%, 44.99% {
+		background-position: -375px 0; 
+	}
+	45%, 47.49% {
+		background-position: -500px 0; 
+	}
+	47.5%, 48.74% {
+		background-position: -625px 0; 
+	}
+	48.75%, 49.99% {
+		background-position: -750px 0; 
+		left:-19px;
+	}
+	50%, 60% {
+		background-position: -875px 0; 
+	}
+	90%, 100% {
+		background-position: -875px 0; 
+		left:280px;
+	}
+}
+.chichi_slip_left{
+	width:125px;
+	height:131px;
+	background:image-url("slip-left.png") no-repeat -3000px 0;
+   	animation:slip_left 2s 1;
+   	background-size: 500px 131px;
+   	position: absolute;
+   	top: -122px;
+   	left:280px;
+}
+@keyframes slip_left {
+	0%, 7.99%{
+		background-position: 0px 0; 
+	}
+	8%, 11.99% {
+		background-position: -125px 0; 
+	}
+	12%, 15.99% {
+		background-position: -250px 0; 
+	}
+	16%, 19.99% {
+		background-position: -375px 0; 
+		left:280px;
+	}
+	100% {
+		background-position: -375px 0; 
+		left:-19px;
+	}
+}
+.chichi_ballet_right{
+	width:125px;
+	height:131px;
+	position: absolute;
+   	top: -122px;
+   	left:289px;
+	background:image-url("ballet-right.png");
+   	animation:ballet_right 4s steps(27) 1;
+}
+@keyframes ballet_right {
+	0%{
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -3375px 0; 
+	}
+}
+.chichi_ballet_left{
+	width:125px;
+	height:131px;
+	position: absolute;
+   	top: -122px;
+   	left:-10px;
+	background:image-url("ballet-left.png") -3250px 0;
+   	animation:ballet_left 4s steps(27) 1;
+}
+@keyframes ballet_left{
+	0%{
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -3375px 0; 
+	}
+}
+
+.copyright{
+	width: 1100px;
+	height: 30px;
+	margin: 0 0 0 -550px;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+	span{
+		float: right;
+		background-color: #bebdae;
+		color:#fff;
+		padding:3px 5px;
+		font-family: bitfont;
+		font-size: 14px;
+	}
 }
