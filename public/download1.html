@@ -8,57 +8,60 @@
 </head>
 
 <body>
-  <div class="download_content hide">
+  <div class="download_content">
      <div class="chichi_logo"></div>
      <div class="facebook_logo"></div>
 
   </div>
   <div class="chichi_app ">
-    <div class="pet_1 hide"></div>
-    <div class="image_app hide">
+    <div class="pet_1"></div>
+    <div class="image_app">
       <div class="pet_2"></div>
     </div>
     <div class="download_btn">
-      <div class="chichi_slip_right hide" id="chichi_slip_right"></div>
+      <a href="#"></a>
+      <div class="tree"></div>
+      <!-- <div class="chichi_slip_right hide" id="chichi_slip_right"></div>
       <div class="chichi_ballet_right hide" id="chichi_ballet_right"></div>
       <div class="chichi_slip_left hide" id="chichi_slip_left"></div>
-      <div class="chichi_ballet_left hide" id="chichi_ballet_left"></div>
+      <div class="chichi_ballet_left hide" id="chichi_ballet_left"></div> -->
+      <div class="ballet"><img src="assets/ballet.gif"></div>
     </div>
   </div>
 
  
  
-  <div class="road hide"></div>
+  <div class="road">
+    <div class="copyright">
+      <span>&copy; 2013 CHICHIAPP.com Privacy Policy</span>
+    </div>
+  </div>
 </div>
 
 <script type="text/javascript">
 $(function() {
-  var r1 = $('#chichi_slip_right'),
-    r2 = $('#chichi_ballet_right'),
-    r3 = $('#chichi_slip_left'),
-    r4 = $('#chichi_ballet_left');
-
   (function() {
     var A = arguments;
+    $('#chichi_slip_right').show();
+    // 需要先隐藏
+    $('#chichi_ballet_right').hide();
+    $('#chichi_slip_left').hide();
+    $('#chichi_ballet_left').hide();
 
-    r1.show();
-    r2.hide();
-    r3.hide();
-    r4.hide();
+    window.setTimeout(function() {
+      $('#chichi_slip_right').hide();
+      $('#chichi_ballet_right').show();
+    }, 4000);
+    window.setTimeout(function() {
+      $('#chichi_ballet_right').hide();
+      $('#chichi_slip_left').show();
+    }, 8000);
 
-    r1.delay(4000).hide(function(){
-      r2.show(function(){
-        r2.delay(4000).hide(function(){
-          r3.show(function(){
-            r3.delay(4000).hide(function(){
-              r4.show(function(){
-                setTimeout(A.callee, 4000);
-              });
-            });
-          });
-        });
-      });
-    });
+    window.setTimeout(function() {
+      $('#chichi_slip_left').hide();
+      $('#chichi_ballet_left').show();
+      setTimeout(A.callee, 4000);
+    }, 10000);
   })();
 });
 </script>

@@ -376,6 +376,20 @@ a,a:hover{
 
 
 /******download page**********/
+#preloader {
+  /* Images you want to preload*/
+  background-image: image-url("chichi-logo.png");
+  background-image: image-url("download-bg.png");
+  background-image: image-url("slip-right.png");
+  background-image: image-url("slip-left.png");
+  background-image: image-url("ballet-right.png");
+  background-image: image-url("ballet-left.png");
+  width: 0px;
+  height: 0px;
+  display: inline;
+  }
+
+
 .download_content{
 	width: 980px;
 	height: auto;
@@ -387,14 +401,30 @@ a,a:hover{
 	width: 361px;
 	height: 300px;
 	background: image-url("chichi-logo.png") no-repeat left bottom;
-	animation:chichi_logo 0.7s 1 ease both;
+	-webkit-animation:chichi_logo 1.7s 1 ease both;
+	-moz-animation:chichi_logo 1.7s 1 ease both;
 	position: absolute;
 	top:0px;
 	right:100px;
 }
 
-@keyframes chichi_logo {
-	0%{
+@-webkit-keyframes chichi_logo {
+	0%, 50%{
+		height: 0
+	}
+	
+	70%{
+		height: 260px;
+	}
+	90% {
+		height: 220px;
+	}
+	100% {
+		height: 260px;
+	}
+}
+@-moz-keyframes chichi_logo {
+	0%, 50%{
 		height: 0
 	}
 	
@@ -413,13 +443,29 @@ a,a:hover{
 	height: 311px;
 	background: image-url("download-bg.png") no-repeat;
 	background-position: -1015px -30px;
-	animation:facebook_logo 1.5s 1 ease both;
+	-webkit-animation:facebook_logo 2.5s 1 ease both;
+	-moz-animation:facebook_logo 2.5s 1 ease both;
 	position: absolute;
 	top:0px;
 	right:10px;
 }
 
-@keyframes facebook_logo {
+@-webkit-keyframes facebook_logo {
+	0%, 49.99%{
+		background-position: -1015px -311px;
+	}
+	
+	90%{
+		background-position:-1015px -70px;
+	}
+	95% {
+		background-position: -1015px -90px;
+	}
+	100% {
+		background-position: -1015px -70px;
+	}
+}
+@-moz-keyframes facebook_logo {
 	0%, 49.99%{
 		background-position: -1015px -311px;
 	}
@@ -521,13 +567,45 @@ a,a:hover{
 	width:125px;
 	height:131px;
 	background:image-url("slip-right.png") no-repeat -3000px 0;
-   	animation:slip_right 4s 1;
+   	-webkit-animation:slip_right 4s 1;
+   	-moz-animation:slip_right 4s 1;
    	background-size: 1000px 131px;
    	position: absolute;
    	top: -122px;
    	left:-19px;
 }
-@keyframes slip_right {
+@-webkit-keyframes slip_right {
+	0%, 24.99%{
+		background-position: 0px 0; 
+	}
+	25%, 29.99% {
+		background-position: -125px 0; 
+	}
+	30%, 42.49% {
+		background-position: -250px 0; 
+	}
+	42.5%, 44.99% {
+		background-position: -375px 0; 
+	}
+	45%, 47.49% {
+		background-position: -500px 0; 
+	}
+	47.5%, 48.74% {
+		background-position: -625px 0; 
+	}
+	48.75%, 49.99% {
+		background-position: -750px 0; 
+		left:-19px;
+	}
+	50%, 60% {
+		background-position: -875px 0; 
+	}
+	90%, 100% {
+		background-position: -875px 0; 
+		left:280px;
+	}
+}
+@-moz-keyframes slip_right {
 	0%, 24.99%{
 		background-position: 0px 0; 
 	}
@@ -562,13 +640,33 @@ a,a:hover{
 	width:125px;
 	height:131px;
 	background:image-url("slip-left.png") no-repeat -3000px 0;
-   	animation:slip_left 2s 1;
+   	-webkit-animation:slip_left 2s 1;
+   	-moz-animation:slip_left 2s 1;
    	background-size: 500px 131px;
    	position: absolute;
    	top: -122px;
    	left:280px;
 }
-@keyframes slip_left {
+@-webkit-keyframes slip_left {
+	0%, 7.99%{
+		background-position: 0px 0; 
+	}
+	8%, 11.99% {
+		background-position: -125px 0; 
+	}
+	12%, 15.99% {
+		background-position: -250px 0; 
+	}
+	16%, 19.99% {
+		background-position: -375px 0; 
+		left:280px;
+	}
+	100% {
+		background-position: -375px 0; 
+		left:-19px;
+	}
+}
+@-moz-keyframes slip_left {
 	0%, 7.99%{
 		background-position: 0px 0; 
 	}
@@ -594,9 +692,18 @@ a,a:hover{
    	top: -122px;
    	left:289px;
 	background:image-url("ballet-right.png");
-   	animation:ballet_right 4s steps(27) 1;
+   	-webkit-animation:ballet_right 4s steps(27) 1;
+   	-moz-animation:ballet_right 4s steps(27) 1;
 }
-@keyframes ballet_right {
+@-webkit-keyframes ballet_right {
+	0%{
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -3375px 0; 
+	}
+}
+@-moz-keyframes ballet_right {
 	0%{
 		background-position: 0px 0; 
 	}
@@ -611,15 +718,32 @@ a,a:hover{
    	top: -122px;
    	left:-10px;
 	background:image-url("ballet-left.png") -3250px 0;
-   	animation:ballet_left 4s steps(27) 1;
+   	-webkit-animation:ballet_left 4s steps(27) 1;
+   	-moz-animation:ballet_left 4s steps(27) 1;
 }
-@keyframes ballet_left{
+@-webkit-keyframes ballet_left{
 	0%{
 		background-position: 0px 0; 
 	}
 	100% {
 		background-position: -3375px 0; 
 	}
+}
+@-moz-keyframes ballet_left{
+	0%{
+		background-position: 0px 0; 
+	}
+	100% {
+		background-position: -3375px 0; 
+	}
+}
+.ballet{
+	width: 435px;
+	height: 131px;
+	position: absolute;
+	top: -120px;
+   	left:-14px;
+   	background: image-url("ballet-bg.png");
 }
 
 .copyright{
