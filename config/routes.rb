@@ -12,5 +12,5 @@ Husky::Application.routes.draw do
 		end
   end
   match ':action'  => 'static#:action'
-  root to: 'welcome#index'
+  root to: 'welcome#home'
 end
