@@ -15,3 +15,5 @@
 /tmp
 
 .MDStore
+.DS_Store
+server.rb

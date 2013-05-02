@@ -1,0 +1,687 @@
+@charset "UTF-8";
+/* 基本样式     */
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: bitfont;
+  src: url("TinyPixy.ttf"); }
+
+@font-face {
+  font-family: numberbitfont;
+  src: url("04B_03__.TTF"); }
+
+img {
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  font-weight: normal; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+.font16 {
+  font-size: 16px; }
+
+.font20 {
+  font-size: 20px; }
+
+.font24 {
+  font-size: 24px; }
+
+body {
+  line-height: 1.25em;
+  color: #333;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f2ec url("bg.gif") repeat; }
+
+input[type=text] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  height: 30px;
+  -webkit-appearance: none;
+  font-size: 14px; }
+
+input[type=button] {
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-size: 14px; }
+
+a, a:hover {
+  color: #333;
+  text-decoration: none; }
+
+.floleft {
+  float: left; }
+
+.floright {
+  float: right; }
+
+.clear {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+#mainbox {
+  padding-top: 80px; }
+  #mainbox .box {
+    width: 1003px;
+    margin: 0 auto;
+    position: relative; }
+
+.gulu {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  top: -50px;
+  right: 130px;
+  background: url("gulu.gif") no-repeat; }
+  .gulu.gulu-en {
+    background: url("gulu-en.gif") no-repeat; }
+  .gulu.gulu-ch {
+    background: url("gulu-ch.gif") no-repeat; }
+
+.notice {
+  width: 618px;
+  height: 109px;
+  background: url("notice.png") no-repeat;
+  margin: 0 auto; }
+  .notice.notice-en {
+    background: url("notice-en.png") no-repeat; }
+  .notice.notice-ch {
+    background: url("notice-ch.png") no-repeat; }
+
+.tishi {
+  font-family: "numberbitfont",Arial;
+  font-size: 14px;
+  color: #666;
+  line-height: 32px;
+  -webkit-text-shadow: 2px 2px 0px #fff;
+  -moz-text-shadow: 2px 2px 0px #fff;
+  -o-text-shadow: 2px 2px 0px #fff;
+  text-shadow: 2px 2px 0px #fff;
+  padding-left: 2px; }
+  .tishi.jp {
+    font-size: 13px; }
+
+.coming {
+  width: 437px;
+  height: 41px;
+  background: url("coming.png");
+  margin: 0px auto; }
+
+.entermail {
+  width: 437px;
+  margin: 15px auto; }
+  .entermail input[type=text] {
+    width: 340px;
+    height: 34px;
+    line-height: 32px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    _background: #666;
+    *background: #666;
+    background: #666\0;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color: #ccc;
+    font-size: 24px;
+    font-family: numberbitfont;
+    border: none;
+    float: left;
+    margin-top: 1px; }
+  .entermail .gobtn {
+    width: 69px;
+    height: 49px;
+    background: url("gobtn.png") no-repeat 0px 0px;
+    float: right;
+    border: none;
+    padding: 0;
+    cursor: pointer; }
+    .entermail .gobtn:hover {
+      background: url("gobtn.png") no-repeat 0px -56px; }
+
+#foot {
+  width: 100%;
+  position: absolute;
+  bottom: 38px; }
+  #foot .links {
+    float: left;
+    position: absolute;
+    left: 18px; }
+    #foot .links .ml10 {
+      margin-left: 10px; }
+  #foot #language {
+    float: right;
+    font-family: "Arial";
+    font-size: 12px;
+    position: absolute;
+    right: 18px;
+    -webkit-text-shadow: 2px 2px 0px #fff;
+    -moz-text-shadow: 2px 2px 0px #fff;
+    -o-text-shadow: 2px 2px 0px #fff;
+    text-shadow: 2px 2px 0px #fff; }
+    #foot #language a {
+      padding: 2px 20px 0 20px;
+      background: url("line.png") no-repeat right center;
+      color: #666; }
+      #foot #language a:hover {
+        color: #333; }
+      #foot #language a.sel {
+        color: #000; }
+    #foot #language .fb {
+      overflow: hidden; }
+
+.notice {
+  border: none;
+  background-color: none;
+  padding: 0;
+  width: 402px;
+  height: 96px;
+  position: absolute;
+  bottom: 340px;
+  left: 50%;
+  margin: 0 0 0 50px;
+  z-index: 999999;
+  background-image: url("ts.png"); }
+  .notice.en {
+    background-position: -402px -96px; }
+  .notice.ja {
+    background-position: -402px 0px; }
+  .notice.zh {
+    background-position: -402px -192px; }
+
+.alert {
+  border: none;
+  background-color: none;
+  padding: 0;
+  width: 402px;
+  height: 96px;
+  position: absolute;
+  bottom: 340px;
+  left: 50%;
+  margin: 0 0 0 50px;
+  z-index: 999999;
+  background-image: url("ts.png"); }
+  .alert.en {
+    background-position: 0 -96px; }
+  .alert.ja {
+    background-position: 0 0px; }
+  .alert.zh {
+    background-position: 0 -192px; }
+
+.year {
+  width: 924px;
+  height: 133px;
+  background: url("year.png") no-repeat;
+  position: absolute;
+  top: 560px;
+  left: 50%;
+  margin: 0 0 0 -462px; }
+
+.runegg {
+  width: 208px;
+  height: 250px;
+  position: fixed;
+  z-index: 99999;
+  bottom: 108px;
+  left: 50%;
+  margin: 0 0 0 -104px;
+  background: url("pp.gif");
+  animation: "runegg" 0.5s steps(3) infinite; }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .runegg {
+    background: url("paopao.png") no-repeat;
+    -webkit-animation: "runegg" 0.5s steps(3) infinite; }
+
+  /*chrome & safari*/ }
+@-webkit-keyframes runegg {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -624px 0; } }
+
+@-moz-keyframes runegg {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -624px 0; } }
+
+@-o-keyframes runegg {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -624px 0; } }
+
+@keyframes runegg {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -624px 0; } }
+
+.road {
+  width: 100%;
+  height: 113px;
+  background: url("road.gif") repeat-x left top;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden; }
+
+#demo {
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 108px; }
+
+#demo img {
+  margin: 0 120px;
+  vertical-align: bottom; }
+
+#indemo {
+  float: left;
+  width: 800%; }
+
+#demo1 {
+  float: left; }
+
+#demo2 {
+  float: left; }
+
+#cloud {
+  width: 1300px;
+  height: 126%;
+  margin: 0 auto;
+  position: relative; }
+
+#cloud1, #cloud2 {
+  position: absolute; }
+
+#cloud1 {
+  width: 285px;
+  height: 126px;
+  background: url("yun.png");
+  left: 10px;
+  top: 100px; }
+
+#cloud2 {
+  width: 131px;
+  height: 90px;
+  background: url("yun1.png");
+  left: 1000px;
+  top: 130px; }
+
+.mask {
+  background: #000;
+  filter: alpha(opacity=30);
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 998; }
+
+/******download page**********/
+#preloader {
+  /* Images you want to preload*/
+  background-image: url("chichi-logo.png");
+  background-image: url("download-bg.png");
+  background-image: url("slip-right.png");
+  background-image: url("slip-left.png");
+  background-image: url("ballet-right.png");
+  background-image: url("ballet-left.png");
+  width: 0px;
+  height: 0px;
+  display: inline; }
+
+.download_content {
+  width: 980px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+.chichi_logo {
+  width: 361px;
+  height: 300px;
+  background: url("chichi-logo.png") no-repeat left bottom;
+  -webkit-animation: chichi_logo 1.7s 1 ease both;
+  -moz-animation: chichi_logo 1.7s 1 ease both;
+  position: absolute;
+  top: 0px;
+  right: 100px; }
+
+@-webkit-keyframes chichi_logo {
+  0%, 50% {
+    height: 0; }
+
+  70% {
+    height: 260px; }
+
+  90% {
+    height: 220px; }
+
+  100% {
+    height: 260px; } }
+
+@-moz-keyframes chichi_logo {
+  0%, 50% {
+    height: 0; }
+
+  70% {
+    height: 260px; }
+
+  90% {
+    height: 220px; }
+
+  100% {
+    height: 260px; } }
+
+.facebook_logo {
+  width: 59px;
+  height: 311px;
+  background: url("download-bg.png") no-repeat;
+  background-position: -1015px -30px;
+  -webkit-animation: facebook_logo 2.5s 1 ease both;
+  -moz-animation: facebook_logo 2.5s 1 ease both;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 99999; }
+
+@-webkit-keyframes facebook_logo {
+  0%, 49.99% {
+    background-position: -1015px -311px; }
+
+  90% {
+    background-position: -1015px -70px; }
+
+  95% {
+    background-position: -1015px -90px; }
+
+  100% {
+    background-position: -1015px -70px; } }
+
+@-moz-keyframes facebook_logo {
+  0%, 49.99% {
+    background-position: -1015px -311px; }
+
+  90% {
+    background-position: -1015px -70px; }
+
+  95% {
+    background-position: -1015px -90px; }
+
+  100% {
+    background-position: -1015px -70px; } }
+
+.downloadapp {
+  width: 980px;
+  height: 170px;
+  position: absolute;
+  bottom: 113px;
+  left: 50%;
+  margin-left: -530px; }
+
+.chichi_app {
+  width: 1100px;
+  height: 420px;
+  position: absolute;
+  margin: 0 0 0 -550px;
+  bottom: 113px;
+  left: 50%; }
+  .chichi_app .pet_1 {
+    width: 97px;
+    height: 112px;
+    background: url("download-bg.png") no-repeat -632px -352px;
+    float: left;
+    margin-top: 309px; }
+    .chichi_app .pet_1:hover {
+      background: url("download-bg.png") no-repeat -526px -352px;
+      margin-top: 308px; }
+  .chichi_app .image_app {
+    background: url("download-bg.png") no-repeat 1px -14px;
+    width: 502px;
+    height: 420px;
+    float: left;
+    margin-left: -12px;
+    position: relative; }
+    .chichi_app .image_app .pet_2 {
+      width: 84px;
+      height: 79px;
+      background: url("download-bg.png") no-repeat -632px -257px;
+      position: absolute;
+      top: 150px;
+      left: 160px; }
+      .chichi_app .image_app .pet_2:hover {
+        background: url("download-bg.png") no-repeat -521px -257px; }
+  .chichi_app .download_btn {
+    width: 408px;
+    height: 110px;
+    float: left;
+    position: relative;
+    margin: 250px 0 0 25px;
+    background: url("download-bg.png") no-repeat -509px -128px; }
+    .chichi_app .download_btn a {
+      width: 408px;
+      height: 110px;
+      position: absolute;
+      background: url("download-bg.png") no-repeat -509px -128px;
+      left: 0;
+      bottom: 0; }
+      .chichi_app .download_btn a:hover {
+        background: url("download-bg.png") no-repeat -510px -17px; }
+    .chichi_app .download_btn .tree {
+      width: 138px;
+      height: 143px;
+      background: url("download-bg.png") no-repeat -772px -281px;
+      position: absolute;
+      left: 355px;
+      top: 30px; }
+
+.chichi_slip_right {
+  width: 125px;
+  height: 131px;
+  background: url("slip-right.png") no-repeat -3000px 0;
+  -webkit-animation: slip_right 4s 1;
+  -moz-animation: slip_right 4s 1;
+  background-size: 1000px 131px;
+  position: absolute;
+  top: -122px;
+  left: -19px; }
+
+@-webkit-keyframes slip_right {
+  0%, 24.99% {
+    background-position: 0px 0; }
+
+  25%, 29.99% {
+    background-position: -125px 0; }
+
+  30%, 42.49% {
+    background-position: -250px 0; }
+
+  42.5%, 44.99% {
+    background-position: -375px 0; }
+
+  45%, 47.49% {
+    background-position: -500px 0; }
+
+  47.5%, 48.74% {
+    background-position: -625px 0; }
+
+  48.75%, 49.99% {
+    background-position: -750px 0;
+    left: -19px; }
+
+  50%, 60% {
+    background-position: -875px 0; }
+
+  90%, 100% {
+    background-position: -875px 0;
+    left: 280px; } }
+
+@-moz-keyframes slip_right {
+  0%, 24.99% {
+    background-position: 0px 0; }
+
+  25%, 29.99% {
+    background-position: -125px 0; }
+
+  30%, 42.49% {
+    background-position: -250px 0; }
+
+  42.5%, 44.99% {
+    background-position: -375px 0; }
+
+  45%, 47.49% {
+    background-position: -500px 0; }
+
+  47.5%, 48.74% {
+    background-position: -625px 0; }
+
+  48.75%, 49.99% {
+    background-position: -750px 0;
+    left: -19px; }
+
+  50%, 60% {
+    background-position: -875px 0; }
+
+  90%, 100% {
+    background-position: -875px 0;
+    left: 280px; } }
+
+.chichi_slip_left {
+  width: 125px;
+  height: 131px;
+  background: url("slip-left.png") no-repeat -3000px 0;
+  -webkit-animation: slip_left 2s 1;
+  -moz-animation: slip_left 2s 1;
+  background-size: 500px 131px;
+  position: absolute;
+  top: -122px;
+  left: 280px; }
+
+@-webkit-keyframes slip_left {
+  0%, 7.99% {
+    background-position: 0px 0; }
+
+  8%, 11.99% {
+    background-position: -125px 0; }
+
+  12%, 15.99% {
+    background-position: -250px 0; }
+
+  16%, 19.99% {
+    background-position: -375px 0;
+    left: 280px; }
+
+  100% {
+    background-position: -375px 0;
+    left: -19px; } }
+
+@-moz-keyframes slip_left {
+  0%, 7.99% {
+    background-position: 0px 0; }
+
+  8%, 11.99% {
+    background-position: -125px 0; }
+
+  12%, 15.99% {
+    background-position: -250px 0; }
+
+  16%, 19.99% {
+    background-position: -375px 0;
+    left: 280px; }
+
+  100% {
+    background-position: -375px 0;
+    left: -19px; } }
+
+.chichi_ballet_right {
+  width: 125px;
+  height: 131px;
+  position: absolute;
+  top: -122px;
+  left: 289px;
+  background: url("ballet-right.png");
+  -webkit-animation: ballet_right 4s steps(27) 1;
+  -moz-animation: ballet_right 4s steps(27) 1; }
+
+@-webkit-keyframes ballet_right {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -3375px 0; } }
+
+@-moz-keyframes ballet_right {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -3375px 0; } }
+
+.chichi_ballet_left {
+  width: 125px;
+  height: 131px;
+  position: absolute;
+  top: -122px;
+  left: -10px;
+  background: url("ballet-left.png") -3250px 0;
+  -webkit-animation: ballet_left 4s steps(27) 1;
+  -moz-animation: ballet_left 4s steps(27) 1; }
+
+@-webkit-keyframes ballet_left {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -3375px 0; } }
+
+@-moz-keyframes ballet_left {
+  0% {
+    background-position: 0px 0; }
+
+  100% {
+    background-position: -3375px 0; } }
+
+.ballet {
+  width: 435px;
+  height: 131px;
+  position: absolute;
+  top: -120px;
+  left: -14px;
+  background: url("ballet-bg.png"); }
+
+.copyright {
+  width: 1100px;
+  height: 30px;
+  margin: 0 0 0 -550px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px; }
+  .copyright a {
+    color: white; }
+  .copyright span {
+    float: right;
+    background-color: #bebdae;
+    color: #fff;
+    padding: 3px 5px;
+    font-family: bitfont;
+    font-size: 14px; }

@@ -2,7 +2,6 @@ set :stages, %w(staging production)
 set :default_stage, "staging"
 require 'capistrano/ext/multistage'
 require "rvm/capistrano"
-require "bundler/capistrano"
 
 set :application, "husky"
 set :repository,  "scm@project.diggerlab.com:husky.git"
