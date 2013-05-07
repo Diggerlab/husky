@@ -27,40 +27,22 @@
 	  <div class="download_btn">
 	    <!-- <a href="#"></a> -->
 	    <div class="tree"></div>
-	    <div class="chichi_slip_right hide" id="chichi_slip_right"></div>
-	    <div class="chichi_ballet_right hide" id="chichi_ballet_right"></div>
-	    <div class="chichi_slip_left hide" id="chichi_slip_left"></div>
-	    <div class="chichi_ballet_left hide" id="chichi_ballet_left"></div>
+		<div id="chichi_slip">
+		</div>
 	  </div>
 	</div>
 
 
-	<script type="text/javascript">
-	$(function() {
-	  (function() {
-	    var A = arguments;
-	    $('#chichi_slip_right').show();
-	    // 需要先隐藏
-	    $('#chichi_ballet_right').hide();
-	    $('#chichi_slip_left').hide();
-	    $('#chichi_ballet_left').hide();
-
-	    window.setTimeout(function() {
-	      $('#chichi_slip_right').hide();
-	      $('#chichi_ballet_right').show();
-	    }, 4000);
-	    window.setTimeout(function() {
-	      $('#chichi_ballet_right').hide();
-	      $('#chichi_slip_left').show();
-	    }, 8000);
-
-	    window.setTimeout(function() {
-	      $('#chichi_slip_left').hide();
-	      $('#chichi_ballet_left').show();
-	      setTimeout(A.callee, 4000);
-	    }, 10000);
-	  })();
+	<script type="text/javascript"> 
+	$(function(){
+	   hide(0); 
 	});
+	function hide(i){
+	   var strs = ["chichi_slip_right","chichi_ballet_right","chichi_slip_left","chichi_ballet_left"];
+	   var timer= i==2?2000:4000;
+	   $("#chichi_slip").html("<div class=\""+strs[i]+"\" />") 
+	   setTimeout("hide("+(i>2?0:i+1)+")",timer);
+	}
 	</script>
 
   <div class="road">
