@@ -4,7 +4,11 @@ require 'capistrano/ext/multistage'
 require "rvm/capistrano"
 
 set :application, "husky"
-set :repository,  "scm@project.diggerlab.com:husky.git"
+set :ssh_options, { :forward_agent => true }
+default_run_options[:pty] = true
+set :repository,  "git@github.com:Diggerlab/husky.git"
+set :repository_cache, "git_cache"
+set :deploy_via, :remote_cache
 set :branch, "master"
 set :user, "webuser"
 set :use_sudo, false
